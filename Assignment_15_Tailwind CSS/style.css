@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+        /* Custom CSS for controlling placeholder text size */
+::placeholder {
+    font-size: 12px; /* Adjust the font size as needed */
+        }
+.text-10{
+    font-size: 10px;
+}
+.img{
+    position: relative;
+}
+    

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+    <!--header -->
+    <header class=" fixed top-0 bg-white shadow flex items-center h-12 w-full z-50">
+        <div class="flex justify-start mx-auto px-4 py-2">
+            <h1 class="text-xl font-semibold text-gray-800"> My Dashboard</h1>
+        </div>
+     <!-- hamburger menu  -->
+        <div class="mr-52 p-4">
+            <button id="toggleMenu" class="block focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M2 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4zm0 6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-2zm0 6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-2z" clip-rule="evenodd"/>
+                </svg>
+            </button>
+        </div>
+     <!-- search bar  -->
+        <div class="flex justify-normal px-4 mr-12 py-8">
+            <div class=" flex items-center justify-start text-gray-600">
+                <input type="search" name="search" placeholder="Search..."  class="bg-gray-200 h-8 px-5 pr-10 rounded-full text-sm focus:outline-none">
+                <button type="submit" class=" ml-4 px-4 py-1 focus:outline-none rounded-full bg-gray-300 hover:bg-gray-400 hover:text-white text-gray-400"> Search
+                </button>
+            </div>
+        </div>
+        <!-- social icons -->
+        <div class=" flex justify-end mr-12 w-36 items-center">
+            <div class="m-2"><img class="w-4 h-4 hover:cursor-pointer" src="/media/envelope.png" alt=""></div>
+            <div class="m-2"><img class="w-4 h-4 hover:cursor-pointer" src="/media/telephone.png" alt=""></div>
+            <div class="m-2"><img class="w-4 h-4 hover:cursor-pointer" src="/media/icons8-notification-bell-100.png" alt=""></div>
+            <div class="m-2"><img class="w-4 h-4 hover:cursor-pointer" src="/media/user.png" alt=""></div>
+            
+        </div>
+        
+    </header>
+
+   <!-- Sidebar -->
+<aside id="menuItems"  class="bg-gray-800 text-white w-52 min-h-screen mt-12 hidden ">
+    <div class="p-2 flex justify-center">
+        <!-- <h1 class="text-2xl font-semibold">Dashboard</h1> -->
+        <p class="mt-2">Welcome, User !</p>
+    </div>
+    <!-- Sidebar Navigation Links -->
+    <nav class="mt-6">
+        <div class="flex items-center hover:bg-gray-700 hover:text-gray-300">
+            <img class=" ml-4 w-4 h-4" src="media/icons8-dashboard-100.png" alt="">
+            <a href="#" class="block py-2 px-4 text-sm">Dashboard</a>
+        </div>
+        <div class="flex items-center hover:bg-gray-700 hover:text-gray-300">
+            <img class=" ml-4 w-4 h-4" src="media/icons8-team-96.png" alt="">
+            <a href="#" class="block py-2 px-4 text-sm">Team</a>
+        </div>
+        <div class="flex items-center hover:bg-gray-700 hover:text-gray-300">
+            <img class=" ml-4 w-4 h-4" src="media/icons8-projects-100.png" alt="">
+            <a href="#" class="block py-2 px-4 text-sm">Projects</a>
+        </div>
+        <div class="flex items-center hover:bg-gray-700 hover:text-gray-300">
+            <img class=" ml-4 w-4 h-4" src="media/icons8-calender-64.png" alt="">
+            <a href="#" class="block py-2 px-4 text-sm">Calendar</a>
+        </div>
+        <div class="flex items-center hover:bg-gray-700 hover:text-gray-300">
+            <img class=" ml-4 w-4 h-4" src="media/icons8-documents-100.png" alt="">
+            <a href="#" class="block py-2 px-4 text-sm ">Documents</a>
+        </div>
+        <div class="flex items-center hover:bg-gray-700 hover:text-gray-300">
+            <img class=" ml-4 w-4 h-4" src="media/icons8-reports-58.png" alt="">
+            <a href="#" class="block py-2 px-4 text-sm ">Reports</a>
+        </div>
+    </nav>
+    <!-- sub-menus  -->
+    <div class="mt-12 p-4 text-sm">
+        <ul> Your Teams
+            <li class=" py-2 pl-8 text-xs flex items-center hover:bg-gray-700 hover:text-gray-300"><img class="w-3 h-3 mr-2" src="media/icons8-team-96.png" alt="">PW Skills</li>
+            <li class=" py-2 pl-8 text-xs flex items-center hover:bg-gray-700 hover:text-gray-300"><img class="w-3 h-3 mr-2" src="media/icons8-team-96.png" alt="">PW Labs</li>
+            <li class=" py-2 pl-8 text-xs flex items-center hover:bg-gray-700 hover:text-gray-300"><img class="w-3 h-3 mr-2" src="media/icons8-team-96.png" alt="">PW IOI</li>
+        </ul>
+    </div>
+</aside>
+
+
+<!-- main contents -->
+<main class="ml-52 p-4 absolute top-12 w-full md:w-4/5 transition-all duration-500">
+    <!-- header -->
+    <header class="flex justify-between items-center bg-white py-2 px-6 shadow-md rounded-lg w-full">
+        <div class="flex items-center">
+            <img class="h-4 w-4" src="media/icons8-user-profile-64.png" alt="">
+            <span class="ml-2 text-md">Profile</span>
+        </div>
+        <div class="flex justify-end items-center space-x-4">
+            <img class="h-4 w-4 hover:cursor-pointer" src="media/icons8-search-24.png" alt="">
+            <img class="h-4 w-4 hover:cursor-pointer" src="media/icons8-notification-bell-100.png" alt="">
+        </div>
+    </header>
+    <!-- contents goes here  -->
+</main>
+
+
+<script>
+    document.getElementById('toggleMenu').addEventListener('click', function () {
+        document.getElementById('menuItems').classList.toggle('hidden');
+    });
+</script>
+
+
+
+
+</body>
+</html>

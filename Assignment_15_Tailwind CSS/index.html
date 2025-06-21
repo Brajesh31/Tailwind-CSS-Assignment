@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex justify-center items-center">
+    <form action=""
+        class="flex flex-col sm:flex-row w-full sm:w-4/5 lg:w-3/4 xl:w-4/5 h-auto justify-center sm:space-x-4 rounded mt-4 shadow-md">
+        <div class="bg-white p-8 w-full sm:w-1/2 lg:w-7/12 xl:w-2/3">
+            <h2 class="text-2xl font-semibold text-center mb-4">Login</h2>
+            <p class="text-center mb-4 text-xs text-gray-400">Enter your credential to access your account</p>
+            <button
+                class="bg-white-600 border border-gray-300 text-black text-xs font-semibold py-1 px-4 rounded-md w-full mb-4 flex items-center justify-center">
+                <img class="w-8 h-auto mr-2" src="../media/7123025_logo_google_g_icon.svg" alt="">
+                Sign in with Google
+            </button>
+            <div class="flex justify-center items-center">
+                <div class="w-full h-0 border-t border-gray-400 mr-4"></div>
+                <span class="text-gray-700">or</span>
+                <div class="w-full h-0 border-t border-gray-400 ml-4"></div>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 text-xs font-semibold mb-2">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="abc@gmail.com"
+                    class="block w-full border border-gray-300 rounded-md px-4 py-1 focus:outline-none focus:border-blue-500">
+            </div>
+            <div class="mb-4">
+                <label for="password" class="block text-gray-700 text-xs font-semibold mb-2">Password
+                    <a href="#" class="text-blue-600 text-10 float-right">Forgot password?</a>
+                </label>
+                <input type="password" id="password" name="password" placeholder="Password"
+                    class="block w-full border border-gray-300 rounded-md px-4 py-1 focus:outline-none focus:border-blue-500">
+            </div>
+            <label class="flex items-center mb-4">
+                <input type="checkbox" class="form-checkbox h-3 w-3 text-blue-600 mr-2">
+                <span class="text-10 text-gray-500"> Do you agree to our <a href="#"
+                        class="text-blue-500">Terms and Conditions</a> and <a href="#"
+                        class="text-blue-600">Privacy Policy</a>?</span>
+            </label>
+            <button
+                class="bg-blue-500 hover:bg-blue-600 text-white font-semibold w-full py-1 px-4 mb-3 rounded focus:outline-none focus:shadow-outline">
+                Login
+            </button>
+            <div class="text-gray-500 flex justify-center text-xs mb-4">Don't have an account? <a href="#"
+                    class="text-blue-500 ml-2">Register Here</a></div>
+        </div>
+        <div class="w-full sm:w-0 lg:w-1/2 lg:ml-8 xl:w-1/3 xl:ml-16">
+            <img class="w-full h-auto" src="../media/young-happy-woman-with-good-idea-sign-white-shirt-full-portrait.jpg"
+                alt="">
+        </div>
+    </form>
+</body>
+</html>
